@@ -1,7 +1,7 @@
 import Link from "next/link";
-
-import useWishlistState from "../hooks/useWishlistState";
 import useSnipcartCount from "../hooks/useSnipcartCount";
+import useWishlistState from "../hooks/useWishlistState";
+
 
 const Layout = ({ children }) => {
   const { hasItems } = useWishlistState();
@@ -30,16 +30,14 @@ const Layout = ({ children }) => {
             <div className="flex-1 flex items-center justify-center">
               <Link href="/">
                 <a className="flex items-center text-gray-900">
-                  <div className="rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                  <div className="rounded-full flex items-center justify-center mr-4">
                     <img
                       className="w-full h-full fill-current"
                       src="/logo.svg"
                       role="presentation"
                     />
                   </div>
-                  <span className="text-lg font-medium">
-                    Headless Dropshipping Starter
-                  </span>
+
                 </a>
               </Link>
             </div>
